@@ -1,0 +1,17 @@
+﻿# OS/editor noise
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Dependency/build output, if skills add scripts later
+node_modules/
+__pycache__/
+.pytest_cache/
+dist/
+build/

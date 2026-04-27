@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scrum"
+  short_description: "Scrum coaching and facilitation workflows"
+  default_prompt: "Use $scrum to help plan or facilitate a Scrum workflow."
