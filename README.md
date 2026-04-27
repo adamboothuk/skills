@@ -34,3 +34,13 @@ Example target layout:
 ## Migration Notes
 
 This mono-repo starts fresh from the current file contents of the previous individual repositories. Historical Git commits from the older repos were intentionally not imported.
+
+## Standalone GDevelop Reference Repo
+
+The `gdevelop-reference` skill is also kept available as a standalone sharing repo at:
+
+```text
+https://github.com/adamboothuk/gdevelop-reference
+```
+
+Do not push the whole mono-repo to that remote. Use the subtree split workflow in `docs/gdevelop-reference-sync.md`.
