@@ -1,0 +1,4 @@
+interface:
+  display_name: "LLM Wiki"
+  short_description: "Build and maintain traceable markdown wikis"
+  default_prompt: "Use $llm-wiki to create, ingest, query, synthesize, audit, or evolve an LLM-managed markdown wiki."
