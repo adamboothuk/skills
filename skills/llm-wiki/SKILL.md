@@ -1,6 +1,6 @@
 ---
 name: llm-wiki
-description: Build, populate, query, synthesize, audit, and maintain LLM-managed markdown or Obsidian-style knowledge bases. Use when Codex needs to create a traceable wiki from raw source material, ingest articles or notes into source/topic/entity/question pages, import PDF books chapter by chapter, validate extracted text, answer questions from a markdown wiki, preserve citations back to source pages, maintain index.md and log.md, or lint/evolve a wiki for stale pages, duplicate concepts, weak links, missing traceability, and knowledge gaps.
+description: Build, populate, query, synthesize, audit, and maintain LLM-managed markdown or Obsidian-style knowledge bases. Use when Codex needs to create a traceable wiki from raw source material, ingest articles, notes, clippings, URL queue lists, YouTube URLs or transcripts into source/topic/entity/question pages, import PDF books chapter by chapter, validate extracted text, answer questions from a markdown wiki, preserve citations back to source pages, maintain index.md and log.md, or lint/evolve a wiki for stale pages, duplicate concepts, weak links, missing traceability, and knowledge gaps.
 ---
 
 # LLM Wiki
@@ -25,6 +25,8 @@ Open only the reference files needed for the task:
 |---|---|
 | Create a new wiki, repair structure, or add templates | `references/wiki-structure.md` |
 | Ingest articles, notes, clippings, transcripts, or extracted chapter text | `references/source-ingestion.md` |
+| Import URLs from a `raw/inbox/` queue file with `New URLs` and `Ingested URLs` sections | `references/url-list-import.md` |
+| Ingest a single YouTube URL or YouTube transcript | `references/youtube-transcript-ingestion.md` |
 | Import a PDF/book over time, create trackers, map chapters, extract batches, or validate extracted text | `references/pdf-book-import.md` |
 | Query the wiki, answer questions, compare sources, or synthesize across pages | `references/synthesis-querying.md` |
 | Audit wiki health, find stale pages, duplicate concepts, weak links, missing traceability, or gaps | `references/linting-evolution.md` |
@@ -43,5 +45,7 @@ Run these from the wiki root when useful:
 - `scripts/validate-wiki-links.ps1 -WikiRoot <path>` checks local markdown links for missing files.
 - `scripts/validate-book-tracker.ps1 -TrackerPath <path>` checks that a book tracker has the required workflow sections.
 - `scripts/validate-extracted-text.ps1 -Path <raw/assets/file.txt>` checks extraction-quality headers before ingestion.
+- `scripts/validate-url-import-list.ps1 -Path <raw/inbox/URLs for import.txt>` checks the URL queue sections and URL lines.
+- `scripts/validate-youtube-transcript-intake.ps1 -Path <raw/inbox/file.md>` checks the YouTube transcript intake header.
 
 Scripts are guardrails, not substitutes for judgment. If a script reports uncertainty, inspect the relevant files before editing.

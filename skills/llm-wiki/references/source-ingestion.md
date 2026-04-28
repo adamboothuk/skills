@@ -14,7 +14,7 @@ Use this reference when turning raw source material into maintained wiki pages.
 
 Before ingestion:
 
-1. Identify source type: article, PDF chapter, book, paper, transcript, internal note, URL queue item.
+1. Identify source type: article, PDF chapter, book, paper, YouTube transcript, internal note, URL queue list, URL queue item.
 2. Check whether the source already has a `wiki/sources/` page.
 3. Check `index.md`, `index-full.md`, and relevant topic/entity pages for overlap.
 4. Decide whether to create:
@@ -22,6 +22,10 @@ Before ingestion:
    - source page plus topic updates
    - source page plus entity updates
    - a question/synthesis page
+
+If the source is a single YouTube URL or YouTube transcript, use `references/youtube-transcript-ingestion.md` before creating wiki pages.
+
+If the source is a queue file such as `raw/inbox/URLs for import.txt`, use `references/url-list-import.md` before ingesting individual URLs.
 
 ## Source Page Workflow
 
