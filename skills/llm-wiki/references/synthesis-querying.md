@@ -11,6 +11,36 @@ Use this reference when answering from the wiki or synthesizing across multiple 
 5. Answer with citations to wiki pages.
 6. State confidence and distinguish confirmed source claims from inference.
 
+## Default Retrieval Prompt
+
+Use or adapt this prompt when the user wants wiki-grounded answers without retyping retrieval rules each time:
+
+```text
+Use the LLM wiki at <wiki root>.
+
+Retrieval rules:
+1. Read index.md first.
+2. Use index-full.md as the catalog if needed.
+3. Find the smallest relevant set of topic, entity, question, and source pages.
+4. Read source pages before making factual claims.
+5. Cite the wiki pages you used.
+6. Separate source-backed claims from inference.
+7. If the wiki does not contain enough evidence, say what is missing instead of filling the gap from general knowledge.
+
+Question:
+<user question>
+```
+
+Replace `<wiki root>` with the user's local wiki folder, for example:
+
+```text
+C:\path\to\my-markdown-wiki
+```
+
+If the wiki root is not known from the user's request, repository context, or current working directory, ask for it before doing retrieval.
+
+Prefer this prompt shape when the aim is to retrieve accepted wiki knowledge with low context usage. It keeps the model's search narrow, makes source use auditable, and prevents the answer from silently drifting into general knowledge.
+
 ## Citation Style
 
 Use normal markdown links to wiki pages. Prefer citing source pages for factual claims and topic/question pages for existing syntheses.

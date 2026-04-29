@@ -17,7 +17,7 @@ Use this reference when a wiki keeps a quick-capture URL list in `raw/inbox/`, u
 The simplest supported format is:
 
 ```text
-URLs for The Brain
+URLs for import.txt
 
 New URLs
 
