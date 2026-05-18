@@ -1,6 +1,6 @@
 ---
 name: llm-wiki
-description: Build, populate, query, synthesize, audit, and maintain LLM-managed markdown or Obsidian-style knowledge bases. Use when Codex needs to create a traceable wiki from raw source material, ingest articles, notes, clippings, URL queue lists, YouTube URLs or transcripts into source/topic/entity/question pages, import PDF books chapter by chapter, validate extracted text, answer questions from a markdown wiki, preserve citations back to source pages, maintain index.md and log.md, or lint/evolve a wiki for stale pages, duplicate concepts, weak links, missing traceability, and knowledge gaps.
+description: Build, populate, query, synthesize, audit, and maintain LLM-managed markdown or Obsidian-style knowledge bases. Use when Codex needs to create a traceable wiki from raw source material, ingest articles, notes, clippings, URL queue lists, YouTube URLs or transcripts into source/topic/entity/question pages, import PDF books chapter by chapter, validate extracted text, answer questions from a markdown wiki, use Obsidian CLI for vault-aware checks, preserve citations back to source pages, maintain index.md and log.md, or lint/evolve a wiki for stale pages, duplicate concepts, weak links, missing traceability, and knowledge gaps.
 ---
 
 # LLM Wiki
@@ -30,6 +30,7 @@ Open only the reference files needed for the task:
 | Import a PDF/book over time, create trackers, map chapters, extract batches, or validate extracted text | `references/pdf-book-import.md` |
 | Query the wiki, answer questions, compare sources, or synthesize across pages | `references/synthesis-querying.md` |
 | Audit wiki health, find stale pages, duplicate concepts, weak links, missing traceability, or gaps | `references/linting-evolution.md` |
+| Use Obsidian CLI for vault-aware checks, graph health, tags/properties, or Obsidian-aware operations | `references/obsidian-cli.md` |
 
 ## Example References
 
